@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+header {
+  min-height: 10vh;
+}
+
+footer {
+  height: 25px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:ital@1&display=swap");
+
+:root {
+  --main-color: #3560a1;
+  --text-grey: #504e4e;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav-items li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav-items li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-items li a:hover {
+  color: var(--main-color);
+}
+
+header .logo h1 {
+  color: var(--main-color);
+  font-size: 50px;
+}
+
+li,
+a,
+button {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  color: var(--text-grey);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+button {
+  margin-left: 20px;
+  padding: 5px 25px;
+  border: 2px solid rgba(53, 96, 161, 1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(53, 96, 161, 0.8);
+  color: rgba(0, 0, 0, 1);
+}
+
+.explore-container {
+  height: 20vh;
+}
+
+.explore {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore h1 {
+  margin: 10px;
+  font-family: "Titillium Web", sans-serif;
+  color: var(--text-grey);
+  font-size: px;
+  font-weight: 400;
+}
+
+.explore button {
+  margin: 0;
+  font-size: 25px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  background-color: var(--main-color);
+}
+
+.explore button:hover {
+  background-color: rgba(53, 96, 161, 0.8);
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.product-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.product-1 img,
+.product-2 img,
+.product-3 img {
+  width: 30vw;
+}
+
+.product-1 h1,
+.product-2 h1,
+.product-3 h1 {
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.product-1 h1:hover,
+.product-2 h1:hover,
+.product-3 h1:hover {
+  color: var(--main-color);
+}
+
+.product-1 button,
+.product-2 button,
+.product-3 button {
+  margin: 10px 0;
+  border: none;
+  color: white;
+  font-weight: 400;
+  background-color: var(--main-color);
+}
+
+.product-1 button:hover,
+.product-2 button:hover,
+.product-3 button:hover {
+  background-color: rgba(53, 96, 161, 0.8);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15%;
+  margin-top: auto;
+  background: var(--main-color);
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+
+.footer-top {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-top li {
+  display: inline-block;
+}
+
+.footer-top a {
+  cursor: pointer;
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-top a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.footer-bottomn {
+  margin-bottom: 10px;
+}
